@@ -1,0 +1,13 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    	{% for perros in perros_list %}
+    	    <h2> {{ perros.nombre }} </h2> <h2> <b>{{ perros.raza }}</b> </h2> <h2> <b>{{ perros.tamaño }}</b> </h2> <h2> <b>{{ perros.foto}}</b> </h2>
+            <div>
+                <img src="{{ perro.foto.url }}" alt="{{ perro.nombre }} {{persona.apellido}}">
+            </div>
+        {% endfor %}
+    </body>
+</html>
